@@ -14,14 +14,9 @@ print("aaa")
 
 if(5<9):
     pass
-if(5<91):
-    pass
-if(5<9):
-    pass
-if(5<91):
+
+
+if(1115<11119):
     pass
 
-if(5<9):
-    pass
-if(5<91):
-    pass
+print("new message")
