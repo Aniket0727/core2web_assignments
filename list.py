@@ -1,22 +1,26 @@
-l1=[num for num in range(1,10)]
-# print(l1)
+# l1=[num for num in range(1,10)]
+# # print(l1)
 
-l2=["Annu","Aniket",["Omkar","Yash"]]
-print(l2)
-
-
-l2[1]="Rushi"
-
-print(l2)
-
-print("aaa")
-print("aaa")
-
-if(5<9):
-    pass
+# l2=["Annu","Aniket",["Omkar","Yash"]]
+# print(l2)
 
 
-if(1115<11119):
-    pass
+# l2[1]="Rushi"
 
-print("new message")
+# print(l2)
+
+l3=["Java","Python","Programing in c",["HTML","PHP","CSS"]]
+
+l4=l3.copy()
+
+print("l3: ",l3)
+print("l4: ",l4)
+
+l3[3][1]="BOOTSTRAP"
+print("After Change ")
+print("l3: ",l3)
+print("l4: ",l4)
+
+print(id(l3))
+print(id(l4))
+
