@@ -9,6 +9,7 @@
 
 # print(l2)
 
+# shallow copy
 # l3=["Java","Python","Programing in c",["HTML","PHP","CSS"]]
 
 # l4=l3.copy()
@@ -22,17 +23,33 @@
 # print("l4: ",l4)
 
 
-l5=["Java","Python","Programing in c","HTML","PHP","CSS"]
+# deep copy
 
-l6=l5.copy()
+# l5=["Java","Python","Programing in c","HTML","PHP","CSS"]
 
-print("l3: ",l5)
-print("l4: ",l6)
+# l6=l5.copy()
 
-l5[3]="BOOTSTRAP"
+# print("l3: ",l5)
+# print("l4: ",l6)
+
+# l5[3]="BOOTSTRAP"
+# print("After Change ")
+# print("l3: ",l5)
+# print("l4: ",l6)
+
+
+
+import copy as cp
+l7=["Java","Python","Programing in c",["HTML","PHP","CSS"]]
+
+l8=cp.deepcopy(l7)
+# l8=l7.copy()
+
+
+print("l7: ",l7)
+print("l8: ",l8)
+
+l7[3][1]="BOOTSTRAP"
 print("After Change ")
-print("l3: ",l5)
-print("l4: ",l6)
-
-print("37")
-print("38")
+print("l7: ",l7)
+print("l8: ",l8)
